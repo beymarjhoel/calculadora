@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imgs/calculator-icon.svg" />
+    <title> Calculadora </title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="molde">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="tela" id="resultado">...</h2>
+                </div>  
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="grupoBotoes">
+                    <div class="row">
+                        <button class="botao m-1" id="um" value="1">1</button>
+                        <button class="botao m-1" id="dois" value="2">2</button>
+                        <button class="botao m-1" id="tres" value="3">3</button>
+                        <button class="botaoOn m-1" id="ok" onclick="on()">ON</button>
+                    </div>
+                    <div class="row">
+                        <button class="botao m-1" id="quatro" value="4">4</button>
+                        <button class="botao m-1" id="cinco" value="5">5</button>
+                        <button class="botao m-1" id="seis" value="6">6</button>
+                        <button class="botao m-1" id="subt" value="-">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="botao m-1" id="sete" value="7">7</button>
+                        <button class="botao m-1" id="oito" value="8">8</button>
+                        <button class="botao m-1" id="nove" value="9">9</button>
+                        <button class="botao m-1" id="divi" value="/">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="botao m-1" onclick="deletar()" id="deletar" value="del"> DEL </button>
+                        <button class="botao m-1" id="zero" value="0">0</button>
+                        <button class="botao m-1" id="soma" value="+">+</button>
+                        <button class="botao m-1" id="mult" value="X">X</button>
+                    </div>           
+                    <div class="row">
+                        <button class="botao m-1" onclick="confirmar()" id="confirmar"> COMEÇAR </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
